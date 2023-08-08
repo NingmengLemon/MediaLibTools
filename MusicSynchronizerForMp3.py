@@ -4,25 +4,7 @@ import threading
 import logging
 import shutil
 
-exclude_list = ['\\Genshin Impact\\',
-                '\\Sabbat Of The Witch OST\\',
-                '\\極彩色\\',
-                '\\Moments\\',
-                '\\Speed Limit Soundtrack\\',
-                '\\TouhouMystiaIzakaya OST\\',
-                '\\彼はきっと魔法を使う。\\',
-                '\\アルカリレットウセイ\\',
-                '\\アンチサイクロン\\',
-                '\\エルゴスム\\',
-                '\\セイデンキ少女\\',
-                'はるまきごはんVocal ver',
-                '\\君の名は\\','\\天气の子\\',
-                '\\DOLL\\','\\Sunny!!\\',
-                '\\Obscure Questions\\',
-                '\\キメラ\\',
-                '\\ネオドリームトラベラー\\',
-                '\\HUMAN\\','\\奇奇怪怪的音乐\\'
-                ] # 同步时完全排除（反向检查时会被删除
+exclude_list = [] # 同步时完全排除（反向检查时会被删除
 ignore_list = ['SyncToy_'] #同步时忽略（在反向检查时也不会被删除
 
 def convert_audio(source,target,bitrate='160k'):
